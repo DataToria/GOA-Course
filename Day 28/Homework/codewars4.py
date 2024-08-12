@@ -3,6 +3,10 @@
 """Complete the function that accepts a string parameter, and reverses each word in the string. 
 All spaces in the string should be retained."""
 
-def reverse_words(text):
-    for i in text:
+def reverse_words(s):
+    words= s.split(' ')
+    reverse_words =[word[::-1] for word in words]
+    return ' '.join(reverse_words)
+result = reverse_words("Hello World")
+print(result)    
         
